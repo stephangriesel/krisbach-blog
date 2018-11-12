@@ -4,11 +4,12 @@ module.exports = {
     desc: 'krisbach.com blog',
   },
   plugins: [
-    'gatsby-plugin-react-helmet','gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `img`,
         path: `${__dirname}/src/images`,
       },
     },
@@ -27,6 +28,7 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-netlify-cms',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
